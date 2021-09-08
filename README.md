@@ -1,3 +1,3 @@
 # Web_Practice
 
-### [Simple Reference](https://vikramkumaar.github.io/Web_Practice/ProfileCard/index.html)
+### [Simple](https://vikramkumaar.github.io/Web_Practice/ProfileCard/index.html)
