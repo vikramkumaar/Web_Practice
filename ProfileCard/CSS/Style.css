@@ -24,17 +24,73 @@
 	overflow: hidden;
 	background-color:#191D2E; 
 }
-.box img{
+.box .image img
+{
 	width: 100px;
 	height: 100px;
-	border-radius: 50px;
+	border-radius: 50%;
+	display: block;
 }
-.user_name
+.box .image
+	 	{
+	 		position: relative;
+	 		width: 100px;
+	 		height: 100px;
+	 		margin: 24px auto 0;
+	 	}
+	 	.box .image .circle-1, 
+	 	.box .image .circle-2
+	 	{
+	 		position: absolute;
+	 		box-sizing: border-box;
+	 		width: 120px
+	 		height: 120px;
+	 		top: -4.5px;
+	 		left: -4.5px;
+	 		border-width: 1.2px;
+	 		border-style: solid;
+	 		border-color: #31bd8c #31bd8c #31bd8c transparent;
+	 		border-radius: 50%;
+	 		transition: all 1.5s ease-in-out;
+	 	}
+	 	.box .image .circle-1
+	 	{
+	 		width: 119px;
+	 		height: 119px;
+	 		top: -9.5px;
+	 		left: -9.5px;
+	 		border-color: #31bd8c transparent 
+	 		       #31bd8c #31bd8c;
+	 	}
+	 	.box .image .circle-2
+	 	{
+	 		width: 109px;
+	 		height: 109px;
+	 		top: -4.5px;
+	 		left: -4.5px;
+	 		color: #31bd8c transparent #31bd8c #31bd8c;
+	 	}
+	 	.box .image:hover
+	 	{
+	 		cursor: pointer;
+	 	}
+	 	.box .image:hover .circle-1, 
+	 	.box .image:hover .circle-2
+	 	{
+	 		transform: rotate(360deg);
+	 	}
+	 	.box .image:hover .circle-2
+	 	{
+	 		transform: rotate(-360deg);
+	 	}
+.box .user_name
 {
-	margin-bottom: 5px;
+	font-size: 20px;
+	font-weight: 600;
+	margin: 8px auto 6px;
 	font-size: 1.6rem;
 }
-.skill
+.box .skill
 {
 	text-align: center;
 	letter-spacing: 1px;
